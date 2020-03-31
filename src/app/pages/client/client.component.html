@@ -1,5 +1,19 @@
-<div class="container">
-    <div class="col-xxs-offset-2 col-xxs-8 center-xxs">
-        <app-adress></app-adress>
+<div class="row container">
+    <div class="col-xxs-6">
+        <div>
+            <h1>Nuevo Cliente
+            </h1>
+        </div>
+        <app-contact (getContact)="getContact($event)"></app-contact>
+    </div>
+    <div class="col-xxs-1 v-separator"></div>
+    <div class="col-xxs-5">
+        <div>
+            <h1>Lista de Clientes
+            </h1>
+        </div>
+        <div *ngFor="let contact of contacts">
+            <app-card-contact [contact]="contact"></app-card-contact>
+        </div>
     </div>
 </div>

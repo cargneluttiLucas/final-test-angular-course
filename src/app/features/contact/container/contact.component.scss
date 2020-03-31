@@ -1,0 +1,55 @@
+@import "../../../shared/styles/colors";
+
+label {
+  width:60px;
+  float:left;
+  font-size:12px;
+  line-height:24px;
+  font-weight:bold;
+  float: right;
+}
+
+input {
+  width:200px;
+  margin-bottom:5px;
+  line-height:18px;
+  padding:2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #CCC;
+}
+
+.container-contact {
+  height: 100%;
+  width: 100%;
+
+  select {
+    width: 212px;
+  }
+
+  .control-container {
+    margin: 10px;
+
+    &__button {
+      margin-top: 25px;
+      height: 50px;
+    }
+  }
+
+  .text-danger {
+    color: red;
+    font-size: 15px;
+  }
+
+  .controls {
+    .ng-valid.ng-dirty:not(form) {
+      border: solid 2px $color-success-400;
+    }
+
+    .ng-invalid.ng-dirty:not(form),
+    .ng-invalid:not(form).form-contact {
+      border: solid 2px $color-error-400;
+    }
+  }
+}
