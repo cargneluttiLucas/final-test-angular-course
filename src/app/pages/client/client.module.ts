@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ClientComponent } from './client.component';
-import { AdressModule } from 'src/app/features/adress/adress.module';
+import { ContactModule } from 'src/app/features/contact/contact.module';
+import { ContactsListModule } from 'src/app/features/contacts-list/contacts-list.module';
 import { ClientRoutingModule } from './client.routing';
 import { CommonModule } from '@angular/common';
 import { ComponentsModule } from 'src/app/shared/component/components.module';
@@ -9,7 +10,8 @@ import { ComponentsModule } from 'src/app/shared/component/components.module';
 @NgModule({
     imports: [
         CommonModule,
-        AdressModule.forRoot(),
+        ContactModule.forRoot(),
+        ContactsListModule,
         ClientRoutingModule,
         ComponentsModule
     ],

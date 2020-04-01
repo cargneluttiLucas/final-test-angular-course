@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -9,14 +9,14 @@ export class ButtonComponent implements OnInit {
 
   @Input() text: string;
   @Output() clickButton: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Input() disabled: boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   clickEventButton(event) {
-    console.log(event);
-    if (event) {
+    if (event && !this.disabled) {
       this.clickButton.next(true);
     }
   }

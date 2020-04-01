@@ -1,0 +1,16 @@
+h1 {
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 1.25;
+  color: #62706c;
+}
+
+.v-separator
+{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 500px;
+    border-right: 1px solid #fafafa;
+    border-left: 1px solid #b4b4b4;
+    padding: 0;
+}

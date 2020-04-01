@@ -1,0 +1,9 @@
+<div class="contact" (click)="onClick()">
+    <img class="contact-image" [src]="'../../../../assets/images/contactLogo.png'">
+    <div class="contact-detail">
+      <h1 class="contact-detail-name">{{ contact.name | upperCapital}}</h1>
+      <span class="contact-detail-phone-number">{{ contact.phone }}</span>
+      <p class="contact-detail-email">{{contact.email}}</p>
+      <p class="contact-detail-address">{{contact.adressName}}</p>
+    </div>
+</div>
